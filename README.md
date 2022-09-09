@@ -50,3 +50,46 @@ At the method that subscribed to ScanSuccess delegate, you can catch the result.
     }
 
   ```
+
+
+
+
+
+
+  # APM
+
+App Performance Management (APM) of AppGallery Connect is a powerful yet easy-to-use tool that offers solutions to app performance management.
+
+## Overview
+
+Enhanced functions: track performance data of a running app on each device, helping you quickly detect, locate, and resolve app performance issues, including slow app launches, prolonged page loading, ANRs, and delayed network responses. These functions can help you ensure smooth running of your app to improve user experience.
+APM allows you to access highly readable reports from AGC in real time without needing to write any code.
+
+
+`Use In Project` : 
+
+To enable APM.
+
+ ```csharp
+
+    public void APMSCollectionOn()
+    {
+        Debug.Log(TAG + "APMSCollectionOn");
+
+        HMSAPMManager.Instance.EnableCollection(true);
+    }
+
+  ```
+
+To enable monitor ANR.
+
+   ```csharp
+
+    public void APMSAnrMonitorOn()
+    {
+        Debug.Log(TAG + "APMSAnrMonitorOn");
+
+        HMSAPMManager.Instance.EnableAnrMonitor(true);
+    }
+
+  ```
